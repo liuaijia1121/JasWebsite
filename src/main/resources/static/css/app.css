@@ -1,0 +1,332 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: "微软雅黑", system-ui;
+}
+
+img {
+    display: block;
+}
+
+a:visited {
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+ul li {
+    display: inline-block;
+    float: left;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+}
+
+html, body {
+    overflow: hidden;
+}
+
+#bigBox .img-Box {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    position: absolute;
+}
+
+#bigBox .img-Box img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.mainbox {
+    width: 1200px;
+    margin: auto;
+}
+
+.main-img {
+    margin-top: 33px;
+}
+
+.main-kuang {
+    background: url(../img/main-border.png);
+    width: 757px;
+    height: 440px;
+    float: right;
+    margin-top: 120px;
+}
+
+.main-kuang p {
+    margin: auto;
+    color: #adadad;
+    line-height: 30px;
+}
+
+.wz {
+    width: 650px;
+    height: 220px;
+    margin: 82px auto auto;
+}
+
+.details {
+    width: 172px;
+    height: 42px;
+    line-height: 42px;
+    background: url(../img/main-kuang_03.png);
+    text-align: center;
+    margin: 60px auto;
+}
+
+#footer {
+    width: 960px;
+    height: 42px;
+    float: left;
+}
+
+#footer ul li {
+    color: white;
+    width: 20%;
+    height: 42px;
+    background: url(../img/main-kuang_07.png) center no-repeat;
+    text-align: center;
+    line-height: 42px;
+}
+
+#footer ul li a {
+    color: white;
+}
+
+#footer ul li:hover {
+    background: url(../img/main-kuang_03.png) center no-repeat;
+}
+
+#footer-last1 {
+    text-align: center;
+}
+
+#footer-last1 ul {
+    display: inline-block;  /* 使列表块级元素居中 */
+    padding: 0;  /* 移除默认的内边距 */
+    list-style-type: none;  /* 移除默认的列表样式 */
+}
+
+#footer-last1 li {
+    display: inline-block;  /* 使列表项并列显示 */
+    margin: 0 10px;  /* 在列表项之间添加一些间距 */
+}
+
+
+/* 详情页intro */
+#intro {
+    width: 100%;
+    min-width: 1200px;
+    min-height: 100px;
+    position: relative;
+    float: left;
+}
+
+.intro-header {
+    width: 1200px;
+    height: 80px;
+    margin: 60px auto auto;
+    position: relative;
+}
+
+.intro-logo {
+    float: left;
+    margin-top: 10px;
+}
+
+.intro-header ul {
+    width: 618px;
+    height: 80px;
+    position: absolute;
+    right: 0;
+}
+
+.intro-header ul li {
+    margin-top: 20px;
+    width: 19%;
+    text-align: center;
+    line-height: 20px;
+}
+
+.intro-header ul li .p-size-12 {
+    font-size: 12px;
+}
+
+.intro-center {
+    width: 100%;
+    min-height: 550px;
+    float: left;
+}
+
+.intro-center-box {
+    width: 1200px;
+    min-height: 550px;
+    margin: 30px auto auto;
+}
+
+.intro-center-top {
+    width: 380px;
+    height: 50px;
+    background: url(../img/intro/intro-wz.png) no-repeat;
+    margin: auto;
+}
+
+.intro-center-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-song1, .intro-song2, .intro-song3 {
+    flex: 1;  /* 使每个歌曲块占据相同的空间 */
+    text-align: center;  /* 使文本居中 */
+}
+
+.intro-song-img img, .intro-song2-img img, .intro-song3-img img {
+    transition: transform 0.8s ease-in-out;  /* 平滑的放大动画，持续0.8秒 */
+}
+
+.intro-song-img img:hover, .intro-song2-img img:hover, .intro-song3-img img:hover {
+    transform: scale(1.1);  /* 鼠标悬停时放大到1.1倍 */
+}
+
+
+
+.intro-actor {
+    width: 307px;
+    height: 350px;
+    float: left;
+    margin-left: 68px;
+}
+
+.intro-actor .intro-actor-img {
+    box-shadow: 5px 0 5px black, 0 5px 5px black;
+}
+
+.intro-actor-img {
+    width: 301px;
+    height: 301px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.intro-actor .intro-actor-img img {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.intro-actor:hover .intro-actor-img img {
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.actor-name {
+    width: 200px;
+    height: 48px;
+    text-align: center;
+    font-size: 13px;
+    margin: 10px auto;
+}
+
+.actor-introduce {
+    font-size: 12px;
+    width: 200px;
+    line-height: 17px;
+}
+
+.actor-name a {
+    margin-left: 10px;
+    width: 174px;
+    height: 42px;
+
+    display: inline-block;
+    text-align: center;
+    line-height: 42px;
+    color: white;
+}
+
+.intro-wz {
+    width: 600px;
+    height: 350px;
+    float: left;
+    margin-left: 68px;
+}
+
+.intro-wz p {
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.intro-center-bottom {
+    width: 1200px;
+    height: 120px;
+    margin: 10px auto auto;
+}
+
+.intro-center-bottom img {
+    margin-left: 68px;
+}
+
+.intro-footer {
+    width: 100%;
+    min-height: 100px;
+    float: left;
+}
+
+.intro-footer-box {
+    width: 1200px;
+    min-height: 100px;
+    margin: 30px auto auto;
+}
+
+.intro-footer-box img {
+    margin-left: 68px;
+}
+
+/* 新的HTML结构的CSS */
+ul li {
+    display: inline-block;
+    float: left;
+    list-style: none;
+    margin-right: 20px; /* 添加间距 */
+}
+
+a {
+    color: inherit;
+    display: block;
+    padding: 10px 20px; /* 添加内边距 */
+    background-color: #f5f5f5; /* 背景色 */
+    border-radius: 5px; /* 圆角 */
+    transition: background-color 0.3s; /* 过渡效果 */
+}
+
+a:hover {
+    background-color: #e0e0e0; /* 鼠标悬停时的背景色 */
+}
+
+.p-size-12 {
+    font-size: 12px;
+}
+
